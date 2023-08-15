@@ -27,8 +27,8 @@ from django.urls import include, path
 
 urlpatterns = [
     # ADMIN
-    path("admin/", admin.site.urls),
+    path(route="admin/", view=admin.site.urls),
 
     # others
-    path("polls/", include("polls.urls")),
+    path(route="polls/", view=include("polls.urls")),
 ]
